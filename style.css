@@ -1,0 +1,91 @@
+* {
+        border: none;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        color: #666;
+        outline: none;
+    }
+
+    body {
+        font-family: Roboto;
+        background: #ffff;
+    }
+
+    header {
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1.2px solid rgb(0, 0, 0, 0.1);
+    }
+
+    header > img {
+        width: 170px;
+        height: 120px;
+    } 
+
+    header > div > a {
+        margin: 0 20px;
+    }
+
+    main {
+        text-align: center;
+        padding-top: 100px;
+        height: 92vh;
+    }
+
+    main > h1 {
+        color: #000;
+    }
+    main > h1, h2, div {
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .item1 { 
+        grid-area: header; 
+        border-radius: 12px 12px 0 0;
+    }
+    .item2 { 
+        grid-area: menu;
+        border-radius: 0 0 0 12px;
+    }
+    .item3 { grid-area: main; }
+    .item4 { 
+        grid-area: right; 
+        border-radius: 0 0 12px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right';
+        grid-gap: 10px;
+        padding: 0 10%;
+        margin-top: 20px;
+    }
+
+    .grid > div {
+        margin: -5px !important;
+        padding: 25px;
+        border: 1px solid rgb(0, 0, 0, 0.1);
+        text-align: left;
+        align-items: center;
+    }
+
+    main > button {
+        margin-top: 40px;
+        padding: 16px 100px;
+        border-radius: 6px;
+        background: rgb(62, 81, 250);
+        color: #fff;
+        font-size: 14px;
+    }
